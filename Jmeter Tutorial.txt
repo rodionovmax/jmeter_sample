@@ -1,0 +1,35 @@
+Jmeter Tutorial:
+Lesson#1. Installation 
+1. in concole type: brew install jmeter
+2. in console type: open /usr/local/bin/jmeter
+
+Lesson#2. Sample http request
+1. Create a test plan
+2. Create a thread group -> users
+3. Add sampler -> http
+4. Add listeners -> View results in table
+					View results tree
+5. Run tests
+
+Lesson#3. Assertions
+1. Add assertions -> Response assertion
+	a. Field to test: Response code
+	b. Pattern matching tools: Equals
+	c. Patterns to test: 200
+	d. Check results in Listeners
+2. Add assertions -> Duration assertion
+	a. Duration in milliseconds: enter the number, for example 2200
+	b. Check results in Listeners
+3. Add assertions -> Size assertion
+	a. Response size Field to test: Full Response
+	b. Size in bites: 30235 for example
+	c. Check results in Listeners
+4. Add assertions -> HTML assertion
+	a. Format: HTML
+	b. Error treshold: 38
+	c. Warning treshold: 415
+	d. Check results in Listeners
+5. Add assertions -> XML assertion
+	a. Check results in Listeners
+6. Add assertions -> Xpath assertion
+	
